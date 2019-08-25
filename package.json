@@ -3,9 +3,14 @@
   "version": "1.0.0",
   "description": "Sample templater for implementing babel using node",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "scripts": {  
+    "test": "echo \"Error: no test specified\" && exit 1",  
+    "build": "babel src -d lib"  
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0"
+  }
 }
